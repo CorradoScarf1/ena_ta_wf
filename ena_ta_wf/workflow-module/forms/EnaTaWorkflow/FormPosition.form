@@ -1,0 +1,189 @@
+{
+    "id": "formposition",
+    "schemaVersion": "1.1.0",
+    "name": "FormPosition",
+    "revision": "1.0",
+    "type": "task",
+    "readOnly": false,
+    "content": [
+        {
+            "id": "formsection",
+            "type": "section",
+            "title": "FormSection",
+            "content": [
+                {
+                    "id": "position_id",
+                    "type": "string",
+                    "label": "PositionId",
+                    "readOnly": false,
+                    "value": "${context.Details.PositionId}",
+                    "constraints": {
+                        "required": false
+                    }
+                },
+                {
+                    "id": "position_title",
+                    "type": "string",
+                    "label": "PositionTitle",
+                    "readOnly": false,
+                    "value": "${context.Details.PositionTitle}",
+                    "constraints": {
+                        "required": false
+                    }
+                },
+                {
+                    "id": "start_date",
+                    "type": "string",
+                    "label": "StartDate",
+                    "readOnly": false,
+                    "value": "${context.Details.StartDate}",
+                    "constraints": {
+                        "required": false
+                    }
+                },
+                {
+                    "id": "end_date",
+                    "type": "string",
+                    "label": "EndDate",
+                    "readOnly": false,
+                    "value": "${context.Details.EndDate}",
+                    "constraints": {
+                        "required": false
+                    }
+                },
+                {
+                    "id": "vacant",
+                    "type": "boolean",
+                    "label": "Vacant",
+                    "readOnly": false,
+                    "value": "${context.Details.Vacant}",
+                    "constraints": {
+                        "required": false
+                    }
+                },
+                {
+                    "id": "adminmanagername",
+                    "type": "string",
+                    "label": "AdminManagerName",
+                    "readOnly": false,
+                    "value": "${context.Details.AdminManagerName}",
+                    "constraints": {
+                        "required": false
+                    }
+                },
+                {
+                    "id": "budgethiredt",
+                    "type": "string",
+                    "label": "BudgetHireDt",
+                    "readOnly": false,
+                    "value": "${context.Details.BudgetHireDt}",
+                    "constraints": {
+                        "required": false
+                    }
+                },
+                {
+                    "id": "companyid",
+                    "type": "string",
+                    "label": "CompanyId",
+                    "readOnly": false,
+                    "value": "${context.Details.CompanyId}",
+                    "constraints": {
+                        "required": false
+                    }
+                },
+                {
+                    "id": "companyname",
+                    "type": "string",
+                    "label": "CompanyName",
+                    "readOnly": false,
+                    "value": "${context.Details.CompanyName}",
+                    "constraints": {
+                        "required": false
+                    }
+                },
+                {
+                    "id": "enddate",
+                    "type": "string",
+                    "label": "EndDate",
+                    "readOnly": false,
+                    "value": "${context.Details.EndDate}",
+                    "constraints": {
+                        "required": false
+                    }
+                },
+                {
+                    "id": "firstprevactdesc",
+                    "type": "string",
+                    "label": "FirstPrevActDesc",
+                    "readOnly": false,
+                    "value": "${context.Details.FirstPrevActDesc}",
+                    "constraints": {
+                        "required": false
+                    }
+                },
+                {
+                    "id": "firstprevactid",
+                    "type": "string",
+                    "label": "FirstPrevActId",
+                    "readOnly": false,
+                    "value": "${context.Details.FirstPrevActId}",
+                    "constraints": {
+                        "required": false
+                    }
+                },
+                {
+                    "id": "firstprevacttypedesc",
+                    "type": "string",
+                    "label": "FirstPrevActTypeDesc",
+                    "readOnly": false,
+                    "value": "${context.Details.FirstPrevActTypeDesc}",
+                    "constraints": {
+                        "required": false
+                    }
+                },
+                {
+                    "id": "firstprevacttypeid",
+                    "type": "string",
+                    "label": "FirstPrevActTypeId",
+                    "readOnly": false,
+                    "value": "${context.Details.FirstPrevActTypeId}",
+                    "constraints": {
+                        "required": false
+                    }
+                },
+                {
+                    "id": "forecasthiredt",
+                    "type": "string",
+                    "label": "ForecastHireDt",
+                    "readOnly": false,
+                    "value": "${context.Details.ForecastHireDt}",
+                    "constraints": {
+                        "required": false
+                    }
+                },
+                {
+                    "id": "holdername",
+                    "type": "string",
+                    "label": "HolderName",
+                    "readOnly": false,
+                    "value": "${context.Details.HolderName}",
+                    "constraints": {
+                        "required": false
+                    }
+                }
+            ]
+        }
+    ],
+    "decisions": [
+        {
+            "id": "approve",
+            "text": "Approve",
+            "decisionType": "positive"
+        },
+        {
+            "id": "reject",
+            "text": "Reject",
+            "decisionType": "negative"
+        }
+    ]
+}

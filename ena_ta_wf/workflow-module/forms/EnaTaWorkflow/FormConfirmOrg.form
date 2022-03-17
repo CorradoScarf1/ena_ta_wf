@@ -1,0 +1,32 @@
+{
+    "id": "formconfirmorg",
+    "schemaVersion": "1.1.0",
+    "name": "FormConfirmOrg",
+    "revision": "1.0",
+    "type": "task",
+    "readOnly": false,
+    "content": [
+        {
+            "id": "confirmtext",
+            "type": "string",
+            "label": "ConfirmText",
+            "readOnly": true,
+            "value": "${context.ConfirmText}",
+            "constraints": {
+                "required": false
+            }
+        }
+    ],
+    "decisions": [
+        {
+            "id": "confirm",
+            "text": "Confirm",
+            "decisionType": "positive"
+        },
+        {
+            "id": "reject",
+            "text": "Reject",
+            "decisionType": "negative"
+        }
+    ]
+}
