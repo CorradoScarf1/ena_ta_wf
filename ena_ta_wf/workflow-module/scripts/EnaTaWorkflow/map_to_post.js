@@ -31,9 +31,9 @@ if (lastusertask2 != null){
 }  else{
     var userTaskProcessor = lastusertask1.processor;
     }*/
-var lastUserTask1 = $.usertasks.usertask1.last;
-var userTaskProcessor = lastUserTask1.processor;
-var userTaskCompletedAt = lastUserTask1.completedAt;
+//var lastUserTask1 = $.usertasks.usertask1.last;
+//var userTaskProcessor = lastUserTask1.processor;
+//var userTaskCompletedAt = lastUserTask1.completedAt;
 // var datacreazione = userTaskCompletedAt.toString().slice(0,10);
 var req = {
     "AdminManagerName":     $.context.Details.AdminManagerName,
