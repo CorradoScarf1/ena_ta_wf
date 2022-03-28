@@ -1,5 +1,6 @@
+//Mapping for Update in DB hanacloud of TA Position
 
-var req = {
+var reqUpd = {
 	"AdditionalBonusDepWaers"    : $.context.Details.AdditionalBonusDepWaers,
 	"StartDate"                  : $.context.Details.StartDate,
 	"AdditionalBonusPerDepLin"   : $.context.Details.AdditionalBonusPerDepLin,
@@ -7,7 +8,7 @@ var req = {
 	"AdminManagerIdExt"          : $.context.Details.AdminManagerIdExt,
 	"AdminManagerName"           : $.context.Details.AdminManagerName,
 	"AdminManagerPersId"         : $.context.Details.AdminManagerPersId,
-	"AdminManagerUsrid"          : $.context.Details.AdminManagerUsrid,
+	"AdminManagerUsrid"         : $.context.Details.AdminManagerUsrid,
 	"AdminType"                  : $.context.Details.AdminType,
 	"AnnualBonusAmount"          : $.context.Details.AnnualBonusAmount,
 	"AnnualBonusPercentage"      : $.context.Details.AnnualBonusPercentage,
@@ -111,8 +112,8 @@ var req = {
     "RecruiterName"              : $.context.Details.RecruiterName,
     "RecruiterPersId"            : $.context.Details.RecruiterPersId,
     "RecruiterUsrid"             : $.context.Details.RecruiterUsrid,
-    "ReferenceOfPosition"        : $.context.Details.RecruiterUsrid,
-    "SiteManagerIdExt"           : $.context.Details.RecruiterUsrid,
+    "ReferenceOfPosition"        : $.context.Details.ReferenceOfPosition,
+    "SiteManagerIdExt"           : $.context.Details.SiteManagerIdExt,
     "SiteManagerName"            : $.context.Details.SiteManagerName,
     "SiteManagerPersId"          : $.context.Details.SiteManagerPersId,
     "SiteManagerUsrid"           : $.context.Details.SiteManagerUsrid,
@@ -138,7 +139,6 @@ var req = {
     "WorkLocationStateCode"      : $.context.Details.WorkLocationStateCode,
     "WorkLocationStateDescr"     : $.context.Details.WorkLocationStateDescr,
     "WorkLocationStreet"         : $.context.Details.WorkLocationStreet
-    
-    }
+}
 
-$.context.req = req;
+$.context.reqUpd = reqUpd;

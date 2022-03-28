@@ -5,8 +5,10 @@ var decision = {
 	"Decision": task.decision,
 //	"Comment": $.context.comment
 };
+
 //$.context.comment = "";
-if (task.decision == "approve") {
+//if ($.context.task.Decision == "Approve") {
+    if (task.decision == "approve") {    
     $.context.approvalStatus = "approved";
     // $.context.secondoapprovatore = true;
 } else {

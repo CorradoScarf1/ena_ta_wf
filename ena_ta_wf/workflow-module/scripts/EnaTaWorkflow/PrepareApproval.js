@@ -44,7 +44,7 @@ var details = {
 
 var rulesPayload = {
 	"RuleServiceId": ruleServiceId,
-	"RuleServiceRevision": "ena_ta_br_r2",
+	"RuleServiceRevision": "ena_ta_br_r6",
 	"Vocabulary": [  details  ]
 };
 
