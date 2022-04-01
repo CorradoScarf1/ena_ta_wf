@@ -1,14 +1,16 @@
-var task = $.usertasks.usertask1.last;
-var decision = {
+//var task = $.usertasks.usertask1.last;
+//var decision = {
 //	"User": task.processor,
 //	"Role": $.context.UserId,
-	"Decision": task.decision,
+//	"Decision": task.decision,
 //	"Comment": $.context.comment
-};
-
+//};
+var decisionapp = $.context.task.Decision;
+$.context.pippo = $.usertasks
 //$.context.comment = "";
 //if ($.context.task.Decision == "Approve") {
-    if (task.decision == "approve") {    
+//task.decision == "approve"
+    if (decisionapp == "approve") {    
     $.context.approvalStatus = "approved";
     // $.context.secondoapprovatore = true;
 } else {

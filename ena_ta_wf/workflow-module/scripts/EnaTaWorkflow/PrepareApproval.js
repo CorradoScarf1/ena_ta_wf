@@ -8,13 +8,13 @@ $.context.selfApproval = false;
 // check if this is the first time we come here (process start)
 if (!$.context.History) {
  	// initialize context
-	$.context.Requester.RequestDate = new Date().toISOString().slice(0, 10);
+//	$.context.Requester.RequestDate = new Date().toISOString().slice(0, 10);
 	$.context.History = [];
 	var decision = {
 		"User": $.info.startedBy,
 		"Role": "Requester",
-		"Decision": "Initial Request",
-		"Comment": $.context.Requester.Comment
+		"Decision": "Initial Request"
+//		"Comment": $.context.Requester.Comment
 	};
     $.context.History.push(decision);
     $.context.internal = {
@@ -33,6 +33,15 @@ if (!$.context.internal.workflowTerminated) {
     $.context.internal.approvalStatus = "In Approval";
 }
 
+$.context.ApproverDetails = {
+    "nameGroup": "ORGANIZATION",
+    "approvalLevel": 1,
+    "nameGroup2": "COMPENSATION",
+    "approvalLevel2": 2,
+    "nameGroup3": "PLANNING",
+    "approvalLevel3": 3
+};
+
 /************ Prepare Input Payload to Execute Rules ****************/
 var details = {
         "OrgGroup": {"nameGroup": $.context.ApproverDetails.nameGroup, "approvalLevel": $.context.ApproverDetails.approvalLevel},
@@ -44,7 +53,7 @@ var details = {
 
 var rulesPayload = {
 	"RuleServiceId": ruleServiceId,
-	"RuleServiceRevision": "ena_ta_br_r6",
+	"RuleServiceRevision": "ena_ta_br_r8",
 	"Vocabulary": [  details  ]
 };
 

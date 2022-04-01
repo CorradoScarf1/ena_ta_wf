@@ -25,7 +25,7 @@ var req = {
 	"BudgetHireDt"               : $.context.Details.BudgetHireDt,
 	"CompanyId"                  : $.context.Details.CompanyId,
 	"CompanyName"                : $.context.Details.CompanyName,
-	"CoporateCategory"           : $.context.Details.CoporateCategory,
+	"CorporateCategory"          : $.context.Details.CorporateCategory,
 	"CostCenterId"               : $.context.Details.CostCenterId,
 	"CostCenterName"             : $.context.Details.CostCenterName,
 	"CriticalRole"               : $.context.Details.CriticalRole,
